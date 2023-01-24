@@ -3,7 +3,7 @@
 ## Overview
 
 The purpose of this analysis was to look at the Amazon Vine program and determine whether or not there is a bias from people in the program. In order to do that, a dataset (in this case Books_v1_00) was chosen from a list of  
-Amazon Reviews datasets. Four dataframes were then made of this dataset using Spark, splitting the various columns of data, then sending these dataframes to a server in PostgreSQL. It was here where the rest of the querying took place, and questions such as what percentage of reviews are five-stars in the Vine program. The initial extracting of the dataset can be found in the [Amazon_Reviews_ETL]() file, while the more specific querying can be found in the [Vine_Review_Analysis]() file. Results are below.
+Amazon Reviews datasets. Four dataframes were then made of this dataset using Spark, splitting the various columns of data, then sending these dataframes to a server in PostgreSQL. It was here where the rest of the querying took place, and questions such as what percentage of reviews are five-stars in the Vine program. The initial extracting of the dataset can be found in the [Amazon_Reviews_ETL](https://github.com/stwpf01/Amazon_Vine_Analysis/blob/main/Amazon_Reviews_ETL.ipynb) file, while the more specific querying can be found in the [Vine_Review_Analysis](https://github.com/stwpf01/Amazon_Vine_Analysis/blob/main/Vine_Review_Analysis.sql) file. Results are below.
 
 ## Results
 
@@ -11,10 +11,10 @@ Amazon Reviews datasets. Four dataframes were then made of this dataset using Sp
 ### Total Reviews
 
 
-![Paid_Total]()
+![Paid_Total](https://github.com/stwpf01/Amazon_Vine_Analysis/blob/main/Images/paidtotal.png)
 
 
-![Unpaid_Total]()
+![Unpaid_Total](https://github.com/stwpf01/Amazon_Vine_Analysis/blob/main/Images/unpaidtotal.png)
 
 
 - Total amount of reviews where the customer paid for the Vine program is 5333.
@@ -24,10 +24,10 @@ Amazon Reviews datasets. Four dataframes were then made of this dataset using Sp
 ### Five Star Reviews
 
 
-![Five_Paid]()
+![Five_Paid](https://github.com/stwpf01/Amazon_Vine_Analysis/blob/main/Images/fivepaid.png)
 
 
-![Five_Unpaid]()
+![Five_Unpaid](https://github.com/stwpf01/Amazon_Vine_Analysis/blob/main/Images/fiveunpaid.png)
 
 
 - Amount of reviews that were rated five-stars in the `star_rating` column from Vine users is 2069.
@@ -37,13 +37,13 @@ Amazon Reviews datasets. Four dataframes were then made of this dataset using Sp
 ### Percentage Between Total Reviews and Five-Star Reviews
 
 
-![Paid_Percent]()
+![Paid_Percent](https://github.com/stwpf01/Amazon_Vine_Analysis/blob/main/Images/paidpercent.png)
 
 
-![Unpaid_Percent]()
+![Unpaid_Percent](https://github.com/stwpf01/Amazon_Vine_Analysis/blob/main/Images/unpaidpercent.png)
 
 
-![SQLFunction]()
+![SQLFunction](https://github.com/stwpf01/Amazon_Vine_Analysis/blob/main/Images/sqlfunction.png)
 
 - The percentage of reviews with five-star ratings in the `star_rating` column for Vine users is 38.79%, or 39% rounded.
 - The percentage of reviews with five-star ratings for non-Vine users is 36.30%, or 36% rounded.
